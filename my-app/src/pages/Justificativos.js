@@ -11,18 +11,18 @@ const Justificativos = () => {
                 <Row>
                     <Form className='text-center'>
                         <FormGroup>
-                            <label><h4>Rut del empleado: </h4></label>
+                            <label><h5>Rut del empleado: </h5></label>
                             <br></br>
-                            <h4><input placeholder='12.345.678-9' name="rut" clasname="form-control"></input></h4>
+                            <h5><input placeholder='12.345.678-9' name="rut" clasname="form-control"></input></h5>
                         </FormGroup>
                         <FormGroup>
-                            <label><h4>Fecha a cubrir: </h4></label>
+                            <label><h5>Fecha a cubrir: </h5></label>
                             <br></br>
-                            <h4><input placeholder='YYYY-MM-DD' name="fecha" clasname="form-control"></input></h4>
+                            <h5><input placeholder='YYYY-MM-DD' name="fecha" clasname="form-control"></input></h5>
                         </FormGroup>
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                            <Button className="btn btn-success btn-lg">Guardar</Button>
-                            <Button className="btn btn-danger btn-lg">Cancelar</Button>
+                            <Button className="btn btn-success btn-default">Guardar</Button>
+                            <Button className="btn btn-danger btn-default">Cancelar</Button>
                         </div>
                     </Form>
                 </Row>
