@@ -1,4 +1,4 @@
-import { Container, Row, Table, FormGroup, Col, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col, Card} from 'react-bootstrap';
 
 const Marcas = () => {
 
