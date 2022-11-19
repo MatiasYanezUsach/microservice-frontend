@@ -6,7 +6,7 @@ class PostJustificativoComponent extends Component{
         super(props)
 
         this.state = {
-            id: this.props.match.params.id,
+            id_justificativo: this.props.match.params.id,
             fecha_cubridora: '',
             rut_empleado: ''
         }
@@ -16,6 +16,7 @@ class PostJustificativoComponent extends Component{
     }
 
     saveJustificativo = (e) => {
+        e.preventDefault();
         let justificativo = {fecha_cubridora: this.state.fecha_cubridora,
                              rut_empleado: this.state.rut_empleado};
         
