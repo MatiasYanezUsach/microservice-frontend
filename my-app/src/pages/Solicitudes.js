@@ -54,7 +54,7 @@ return (
                         <h5><input placeholder='YYYY-MM-DD' name="fecha" clasname="form-control"></input></h5>
                     </FormGroup>
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <Button onClick={(setSolicitud) => window.location.reload()} className="btn btn-success btn-default">Guardar</Button>
+                        <Button onClick={setSolicitud} className="btn btn-success btn-default">Guardar</Button>
                         <Button className="btn btn-danger btn-default">Cancelar</Button>
                     </div>
                 </Form>
