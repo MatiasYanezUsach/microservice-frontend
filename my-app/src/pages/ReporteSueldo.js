@@ -30,7 +30,7 @@ const ReporteSueldo = () => {
                 </Row>
                 <Row>
                     <Col>
-                        <Button className="btn btn-success btn-lg" variant="success">
+                        <Button onClick={getReporte} className="btn btn-success btn-lg" variant="success">
                             Generar la planilla
                         </Button>
                     </Col>

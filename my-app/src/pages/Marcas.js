@@ -1,6 +1,26 @@
-import { Container, Row, Col, Card} from 'react-bootstrap';
+import { useState } from 'react';
+import { Container, Row, Form, Col, Button, Card} from 'react-bootstrap';
+import axios from 'axios';
 
 const Marcas = () => {
+
+    const [selectedFile, setSelectedFile] = useState(null);
+
+    const handleUpload = (e) => {
+        e.preventDefault();
+
+        let url = 'http://localhost:8080/marcas//importar';
+        let form_data = new FormData();
+        form_data.append("file", selectedFile);
+
+        axios.post(url, form_data)
+            .then((response) => {
+                alert(response.data);
+            })
+            .catch((err) => {
+                alert(err.response.data);
+            })
+    }
 
     return (
         <Container style={{ marginTop: '70px' }}>
@@ -8,16 +28,24 @@ const Marcas = () => {
                 <Row>
                     <Col><h1>Marcas de reloj</h1><br></br> </Col>
                 </Row>
-                <div class="card-body p-4 text-center">
-                    <h3>Cargar Datos</h3><br></br>
-                    <form>
-                        <input type="file" class="form-control" name="archivos" /><br></br>
-                        <h5><input type="submit" value="Cargar" /></h5>
-                    </form>
-                </div>
+                <Row className="mt-5">
+                    <Row className='text-center'>
+                        <Form onSubmit={handleUpload}>
+                            <Form.Group controlId="formFile" className="mb-3">
+                                <Form.Control
+                                    type="file"
+                                    size="lg"
+                                    required
+                                    onChange={(e) => setSelectedFile(e.target.files[0])}
+                                />
+                            </Form.Group>
+                            <Button type="submit" className="btn btn-success btn-lg">Subir</Button>
+                        </Form>
+                    </Row>
+                </Row>
             </Card>
         </Container>
-    );
+    )
 };
 
 export default Marcas;
