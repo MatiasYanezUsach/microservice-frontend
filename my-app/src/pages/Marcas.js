@@ -22,6 +22,10 @@ const Marcas = () => {
             })
     }
 
+    const alerta = () =>{
+        alert("Se han subido las marcas de reloj!")
+    }
+
     return (
         <Container style={{ marginTop: '70px' }}>
             <Card className='text-center'>
@@ -39,7 +43,7 @@ const Marcas = () => {
                                     onChange={(e) => setSelectedFile(e.target.files[0])}
                                 />
                             </Form.Group>
-                            <Button type="submit" className="btn btn-success btn-lg">Subir</Button>
+                            <Button type="submit" onClick={alerta} className="btn btn-success btn-lg">Subir</Button>
                         </Form>
                     </Row>
                 </Row>

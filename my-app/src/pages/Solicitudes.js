@@ -30,6 +30,7 @@ const Solicitudes = () => {
             console.log(solicitudes.fecha_cubridora)
             console.log("solicitud => " + JSON.stringify(solicitud));
             SolicitudService.IngresarSolicitud(solicitud);
+            alert("Se ha subido la solicitud");
         } catch (error) {
             console.log(error.message)
         }

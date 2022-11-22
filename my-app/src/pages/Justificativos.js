@@ -29,6 +29,7 @@ const Justificativos = () => {
             console.log(justificados.fecha_cubridora)
             console.log("justificativo => " + JSON.stringify(justificativo));
             JustificativoService.IngresarJustificativo(justificativo);
+            alert("Se ha subido la justificacion");
         } catch (error) {
             console.log(error.message)
         }
