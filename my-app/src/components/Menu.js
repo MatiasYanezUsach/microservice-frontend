@@ -4,7 +4,7 @@ const Menu = () => {
     return (
         <Navbar bg="dark" variant="dark" fixed="top">
             <Container>
-                <Navbar.Brand href="/">App</Navbar.Brand>
+                <Navbar.Brand href="/">MueblesStgo</Navbar.Brand>
                 <Navbar.Toggle aria-controls='responsive-navbar'></Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar">
                     <Nav className='me-auto'>

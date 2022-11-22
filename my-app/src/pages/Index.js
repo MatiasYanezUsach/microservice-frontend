@@ -1,16 +1,16 @@
 import { Col, Container, Row } from "react-bootstrap";
-import logo from '../logo.svg';
+import mueble from '../mueble.jpg';
 
 const Index = () => {
     return (
         <Container style={{display: 'flex', justifyContent: 'center', marginTop: '70px'}}>
             <Row>
-                <Col sm="12">
-                    <h3>Hola Mundo!</h3>
-                </Col>
-                <Col sm="12">
-                    <img src={logo} className="logo" alt="logo"/> 
-                </Col>
+                <Row className='text-center'>
+                    <h1>Muebles STGO!</h1>
+                </Row>
+                <Row className='text-center'>
+                    <img src={mueble} className="logo" alt="logo" media="(max-width: 400px)"/> 
+                </Row>
             </Row>
         </Container>
     );
