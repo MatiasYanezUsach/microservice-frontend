@@ -9,7 +9,7 @@ const Marcas = () => {
     const handleUpload = (e) => {
         e.preventDefault();
 
-        let url = 'http://localhost:8035/marcas//importar';
+        let url = 'http://localhost:8080/marcas//importar';
         let form_data = new FormData();
         form_data.append("file", selectedFile);
 

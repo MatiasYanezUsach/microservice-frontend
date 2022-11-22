@@ -2,7 +2,7 @@ import axios from 'axios';
 
 class JustificativoService {
     IngresarJustificativo(justificativo) {
-        return axios.post('http://localhost:8035/justificativo/subirJustificativo', justificativo)
+        return axios.post('http://localhost:8080/justificativo/subirJustificativo', justificativo)
     }
 }
 

@@ -8,7 +8,7 @@ const ReporteSueldo = () => {
 
     const getReporte = async () => {
         try {
-            let url = 'http://localhost:8035/sueldo';
+            let url = 'http://localhost:8080/sueldo';
             let response = await axios.get(url);
             if (response.status === 200) {
                 setReporteSueldo(response.data);
