@@ -2,7 +2,7 @@ import axios from 'axios';
 
 class SolicitudService {
     IngresarSolicitud(solicitud) {
-        return axios.post('http://localhost:8080/solicitud/subirSolicitud', solicitud)
+        return axios.post('http://localhost:8035/solicitud/subirSolicitud', solicitud)
     }
 }
 
