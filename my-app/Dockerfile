@@ -1,9 +1,9 @@
 # Node Alpine version -> light version
-FROM node:16-alpine
+FROM node:18.3.0-alpine
 WORKDIR /app
 
 # Copiar paquete de dependencias
-COPY package*.json ./
+COPY package.json .
 # Instalar dependencias
 RUN npm install
 
